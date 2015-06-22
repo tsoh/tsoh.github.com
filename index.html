@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/pgwslider.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -59,6 +60,29 @@
     </nav>
 
     <!-- Header -->
+	
+	<ul class="pgwSlider">
+    <li><img src="img/CAM00095.jpg"></li>
+    <li><img src="img/CAM00096.jpg"></li>
+    <li><img src="img/CAM00097.jpg"></li>
+    <li><img src="img/CAM00098.jpg"></li>
+    <li><img src="img/CAM00099.jpg"></li>
+    <li><img src="img/CAM00101.jpg"></li>
+    <li><img src="img/CAM00102.jpg"></li>
+    <li><img src="img/CAM00103.jpg"></li>
+    <li><img src="img/CAM00104.jpg"></li>
+    <li><img src="img/CAM00105.jpg"></li>
+    <li><img src="img/CAM00106.jpg"></li>
+    <li><img src="img/CAM00107.jpg"></li>
+    <li><img src="img/CAM00108.jpg"></li>
+    <li><img src="img/CAM00109.jpg"></li>
+    <li><img src="img/CAM00110.jpg"></li>
+    <li><img src="img/CAM00111.jpg"></li>
+    <li><img src="img/CAM00112.jpg"></li>
+    <li><img src="img/CAM00113.jpg"></li>
+	</ul>
+	
+	
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Start Bootstrap</h1>
@@ -268,9 +292,16 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="js/pgwslider.min.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
+	$(document).ready(function() {
+		var pgwSlider = $('.pgwSlider').pgwSlider();
+		pgwSlider.stopSlide();
+	});
+
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
